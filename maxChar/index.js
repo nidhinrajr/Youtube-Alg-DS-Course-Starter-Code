@@ -3,7 +3,20 @@
 // maxChar("I loveeeeeee noodles") === "e"
 // maxChar("1337") === "3"
 
-function maxChar(str) {}
+function maxChar(str) {
+	let obj = {};
+  let maxchar = "";
+  let maxCount = 0;
+  for(let i =0;i<str.length;i++){
+  	obj[str[i]] = obj[str[i]] + 1 || 1;
+    if(obj[str[i]] > maxCount){
+    	maxchar = str[i];
+      maxCount = obj[str[i]]
+    }
+  }
+	console.log(maxchar,maxCount);
+}
+maxChar("abcdabbb");
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
