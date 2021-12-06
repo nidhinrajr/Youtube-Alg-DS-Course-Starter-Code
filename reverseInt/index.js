@@ -7,8 +7,23 @@
 //   reverseInt(-13) === -31
 //   reverseInt(-100) === -1
 
-function reverseInt(n) {}
+/*
+function reverseInt(n) {
+	console.log( parseInt(n.toString().split("").reverse().join("")))
+}
+reverseInt(123); 
+*/
 
+function reverseInt(n) {
+	n=n.toString();
+  let rev="";
+  for(let i = 0; i<n.length;i++){
+  	rev = n[i] + rev;
+  }
+  console.log(parseInt(rev))
+	
+}
+reverseInt(12311);
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
 //    ) (   | (    \/| (    \/   ) (     | (    \/| (   ) || (    \/| (    \/| (    \/
