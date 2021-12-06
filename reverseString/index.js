@@ -4,8 +4,22 @@
 //   reverse('abcd') === 'dcba'
 //   reverse('Hello!') === '!olleH'
 
-function reverse(str) {}
 
+/*function reverse(str){
+	return str.split("").reverse().join("");
+}
+const a = reverse("nid");
+console.log(a);
+*/
+function reverse(str){
+  let rev = "";
+  for(let i =0;i<str.length;i++){
+  	rev = str[i] + rev;
+  }
+	return rev;
+}
+const a = reverse("nidh");
+console.log(a);
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
 //    ) (   | (    \/| (    \/   ) (     | (    \/| (   ) || (    \/| (    \/| (    \/
