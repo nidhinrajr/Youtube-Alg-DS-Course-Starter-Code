@@ -11,7 +11,20 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+function fizzBuzz(n) {
+	for(let i=1;i<n;i++){
+  	if(i%3 === 0 && i%5 === 0){
+    	console.log('fizzbuzz',i);
+    } else if(i%3 === 0){
+    	console.log('fizz',i);
+    } else if(i%5 === 0){
+    	console.log('buzz',i);
+    } else {
+    	console.log(i);
+    }
+  }
+}
+fizzBuzz(16);
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
